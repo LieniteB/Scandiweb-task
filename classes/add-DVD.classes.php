@@ -9,10 +9,10 @@ class AddDVD extends AddProductContr {
     }
 
     public function addDVD() {
-        if($this->emptyDVD() == false) {
-            header("location: ../add-product.php?error=emptydvd");
-            exit();
-        }
+        // if($this->emptyDVD() == false) {
+        //     header("location: ../add-product.php?error=emptydvd");
+        //     exit();
+        // }
         if($this->invalidData() == false) {
             header("loaction: ../add-product.php?error=data");
             exit();

@@ -21,10 +21,10 @@ class AddProductContr extends AddProduct{
     }
 
     public function addProduct() {
-        if($this->emptyInput() == false) {
-            header("location: ../add-product.php?error=emptyinput");
-            exit();
-        }
+        // if($this->emptyInput() == false) {
+        //     header("location: ../add-product.php?error=emptyinput");
+        //     exit();
+        // }
         if($this->invalidData() == false) {
             header("loaction: ../add-product.php?error=data");
             exit();

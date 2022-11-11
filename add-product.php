@@ -13,6 +13,7 @@
         <br>
         <label for="sku">SKU</label>
         <input type="text" name="sku" id="sku">
+        
         <br>
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
@@ -27,8 +28,7 @@
             <option value="furniture">Furniture</option>
             <option value="book">Book</option>
         </select>
-
-        <div class="atribute size" id="size">
+        <div class="atribute size" id="size-container">
             <p>Please, provide size</p>
             <label for="size">Size (MB)</label>
             <input type="text" name="size" id="size">
@@ -44,12 +44,13 @@
             <label for="length">Length (CM)</label>
             <input type="text" name="length" id="length">
         </div>
-        <div class="atribute weight" id="weight">
+        <div class="atribute weight" id="weight-container">
             <p>Please provide weight</p>
             <label for="weight">Weight (KG)</label>
             <input type="text" name="weight" id="weight">
         </div>
     </form>
+    <span id="error"></span>
     <?php
         if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyinput") {

@@ -9,10 +9,10 @@ class AddBook extends AddProductContr {
     }
 
     public function addBook() {
-        if($this->emptyDVD() == false) {
-            header("location: ../add-product.php?error=emptybook");
-            exit();
-        }
+        // if($this->emptyDVD() == false) {
+        //     header("location: ../add-product.php?error=emptybook");
+        //     exit();
+        // }
         if($this->invalidData() == false) {
             header("loaction: ../add-product.php?error=data");
             exit();

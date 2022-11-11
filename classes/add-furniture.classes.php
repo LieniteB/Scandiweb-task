@@ -15,10 +15,10 @@ class AddFurniture extends AddProductContr {
     }
 
     public function addFurniture() {
-        if($this->emptyFurniture() == false) {
-            header("location: ../add-product.php?error=emptyfurniture");
-            exit();
-        }
+        // if($this->emptyFurniture() == false) {
+        //     header("location: ../add-product.php?error=emptyfurniture");
+        //     exit();
+        // }
         if($this->invalidData() == false) {
             header("loaction: ../add-product.php?error=data");
             exit();

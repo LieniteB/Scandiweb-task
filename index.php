@@ -70,11 +70,11 @@
                 
                 <?php
             }
-        }else {
-            
         }
     ?>
+
     </form>
+
     </section>
 </main>
 <?php

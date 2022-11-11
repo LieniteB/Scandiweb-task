@@ -2,73 +2,6 @@
   display: none;
 }
 
-.show_atribute {
-  display: block;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #ececec;
-  min-height: 42px;
-  min-width: 288px;
-  color: black;
-  padding: 10px 60px 10px 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.33rem;
-  text-align: left;
-  z-index: 25;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #9e9e9e;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 30px;
-}
-.dropdown p {
-  color: #FFA800;
-}
-.dropdown img {
-  position: relative;
-  right: 40px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 288px;
-  z-index: 25;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
 .show {
   display: block;
 }
@@ -119,4 +52,8 @@ nav .buttons button a {
 }
 nav .buttons button a a::after {
   color: black;
+}
+
+#error {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
