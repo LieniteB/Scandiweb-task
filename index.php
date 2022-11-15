@@ -8,8 +8,8 @@
     <nav>
         <h1>Product List</h1>
         <div class="buttons">
-            <button><a href="add-product.php">ADD</a></button>
-            <button form="delete" id="delete-product-btn" type='submit' name="remove">MASS DELETE</button>
+            <a href="add-product.php"><button class="add">ADD</button></a>
+            <button class="delete"form="delete" id="delete-product-btn" type='submit' name="remove">MASS DELETE</button>
         </div>
     </nav>
     <section class="all-products">

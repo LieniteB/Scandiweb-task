@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .atribute {
   display: none;
 }
@@ -10,8 +14,8 @@
   border: black 4px solid;
   padding: 20px;
   margin: 50px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   align-items: center;
 }
 .product p {
@@ -56,4 +60,43 @@ nav .buttons button a a::after {
 
 #error {
   color: red;
+  margin-bottom: 10px;
+}
+
+#product_form {
+  text-align: left;
+  background-color: rgb(238, 238, 238);
+  width: 500px;
+  margin: 40px auto 100px;
+  padding: 20px 150px;
+}
+
+input[type=text] {
+  margin: 5px 0 20px 0;
+  padding: 10px;
+  border: none;
+}
+
+#productType {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 97%;
+  padding: 10px;
+  border: none;
+}
+
+.buttons a {
+  color: black;
+}
+.buttons button {
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons .cancel, .buttons .delete {
+  background-color: rgb(250, 139, 139);
+}
+.buttons .save, .buttons .add {
+  background-color: rgb(136, 190, 136);
 }/*# sourceMappingURL=style.css.map */

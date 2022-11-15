@@ -1,6 +1,6 @@
 <?php
 
-class AddDVD extends AddProductContr {
+class AddDVD extends AddProduct {
     private $size;
 
     public function __construct($size)
@@ -9,26 +9,7 @@ class AddDVD extends AddProductContr {
     }
 
     public function addDVD() {
-        // if($this->emptyDVD() == false) {
-        //     header("location: ../add-product.php?error=emptydvd");
-        //     exit();
-        // }
-        if($this->invalidData() == false) {
-            header("loaction: ../add-product.php?error=data");
-            exit();
-        }
-        
-
         $this->setDVD($this->size);
     }
 
-    private function emptyDVD() {
-        $result = null;
-        if(empty($this->size)) {
-            $result = false;
-        }else {
-            $result = true;
-        }
-        return $result;
-    }
 }
