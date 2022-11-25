@@ -1,7 +1,7 @@
 <?php
 
-class AddProductContr extends AddProduct{
-
+class AddProductContr extends AddProduct
+{
     private $sku;
     private $name;
     private $price;
@@ -15,8 +15,9 @@ class AddProductContr extends AddProduct{
         $this->type = $type;
     }
 
-    public function addProduct() {
-        if($this->SKUTakenCheck() == false) {
+    public function addProduct()
+    {
+        if ($this->SKUTakenCheck() == false) {
             header("location: ../add-product.php?error=skutaken");
             exit();
         }
@@ -26,14 +27,14 @@ class AddProductContr extends AddProduct{
 
     //error handelers
 
-    private function SKUTakenCheck() {
+    private function SKUTakenCheck()
+    {
         $result = null;
-        if(!$this->checkSKU($this->sku)) {
+        if (!$this->checkSKU($this->sku)) {
             $result = false;
-        }else {
+        } else {
             $result = true;
         }
         return $result;
     }
-
 }

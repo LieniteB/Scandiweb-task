@@ -1,6 +1,7 @@
 <?php
 
-class AddBook extends AddProduct {
+class AddBook extends AddProduct
+{
     private $weight;
 
     public function __construct($weight)
@@ -8,7 +9,8 @@ class AddBook extends AddProduct {
         $this->weight = $weight;
     }
 
-    public function addBook() {
+    public function addBook()
+    {
         $this->setBook($this->weight);
     }
 }

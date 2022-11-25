@@ -1,3 +1,5 @@
+//type switcher code
+
 function selection() {
     if (document.getElementById("size-container").classList.contains('show')) {
         document.getElementById("size-container").classList.remove('show')

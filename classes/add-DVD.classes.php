@@ -1,6 +1,7 @@
 <?php
 
-class AddDVD extends AddProduct {
+class AddDVD extends AddProduct
+{
     private $size;
 
     public function __construct($size)
@@ -8,8 +9,8 @@ class AddDVD extends AddProduct {
         $this->size = $size;
     }
 
-    public function addDVD() {
+    public function addDVD()
+    {
         $this->setDVD($this->size);
     }
-
 }

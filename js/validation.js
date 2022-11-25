@@ -1,3 +1,7 @@
+
+//form validation on add-product page
+
+
 const error = document.getElementById('error');
 const sku = document.getElementById("sku");
 const names = document.getElementById("name");
